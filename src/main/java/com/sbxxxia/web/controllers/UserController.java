@@ -13,7 +13,13 @@ public class UserController {
 	
 	@GetMapping("/join/form")
 	public String joinForm() {
-		logger.info("----------------이동 화면 진입 ---------------");
+		logger.info("----------------회원가입 화면 진입 ---------------");
 		return "join";
+	}
+	
+	@GetMapping("/login/form")
+	public String loginForm() {
+		logger.info("----------------로그인 화면 진입 ---------------");
+		return "login";
 	}
 }
