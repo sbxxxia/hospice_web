@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:include page="header.jsp" />
+<jsp:include page="common/header.jsp" />
 <main class="v-main" style="padding: 64px 0px 0px;" data-booted="true">
 	<div class="v-main__wrap">
 		<div data-v-4c22b934="">
@@ -66,7 +66,7 @@
 		</div>
 	</div>
 </main>
-<jsp:include page="footer.jsp"/>
+<jsp:include page="common/footer.jsp"/>
 <!-- built files will be auto injected -->
 <script type="text/javascript" src="/js/chunk-vendors.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>

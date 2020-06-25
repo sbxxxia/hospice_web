@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<jsp:include page="header.jsp" />
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<jsp:include page="common/header.jsp" />
 <main class="v-main" style="padding: 64px 0px 0px;" data-booted="true">
 	<div class="v-main__wrap">
 		<div data-v-4c22b934="">
@@ -738,9 +737,6 @@
 									<div data-date="2020-06-30"
 										class="v-event v-event-start v-event-end orange white--text"
 										style="height: 20px; width: 195%; margin-bottom: 1px;">
-										<div class="pl-1">
-											<strong>오후 11:45</strong> PTO
-										</div>
 									</div>
 									<div data-date="2020-06-30" data-more="1"
 										class="v-event-more pl-1"
@@ -790,7 +786,7 @@
 		</div>
 	</div>
 </main>
-<jsp:include page="footer.jsp"/>
+<jsp:include page="common/footer.jsp"/>
 <!-- built files will be auto injected -->
 <script type="text/javascript" src="/js/chunk-vendors.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
@@ -798,10 +794,12 @@
 </body>
 </html>
 <script>
-$('#join_btn').click(function(){
-	location.href= "<%=application.getContextPath()%>/account/join/form"
+$('#join_btn').click(function(e){
+	e.preventDefault()
+	location.href = "${context}/account/join/form"
 	})
-$('#login_btn').click(function(){
-	location.href= "<%=application.getContextPath()%>/account/login/form"
+$('#login_btn').click(function(e){
+	e.preventDefault()
+	location.href = "${context}/account/login/form"
 	})
 </script>
