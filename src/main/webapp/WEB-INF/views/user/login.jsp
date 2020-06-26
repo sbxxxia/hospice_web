@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:include page="common/header.jsp" />
+<jsp:include page="../common/header.jsp" />
 <main class="v-main" style="padding: 64px 0px 0px;" data-booted="true">
 	<div class="v-main__wrap">
 		<div data-v-4c22b934="">
 			<div data-v-ef68022e="" data-v-4c22b934="" class="container">
 				<div data-v-ef68022e="" class="v-card v-sheet theme--light"
 					style="max-width: 40%;">
-					<div data-v-ef68022e="" primary-title=""
+					<div data-v-ef68022e="" 
 						class="v-card__title headline grey lighten-2">Login</div>
 					<form data-v-ef68022e="" novalidate="novalidate" class="v-form">
 						<div data-v-ef68022e=""
@@ -66,7 +66,7 @@
 		</div>
 	</div>
 </main>
-<jsp:include page="common/footer.jsp"/>
+<jsp:include page="../common/footer.jsp"/>
 <!-- built files will be auto injected -->
 <script type="text/javascript" src="/js/chunk-vendors.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>

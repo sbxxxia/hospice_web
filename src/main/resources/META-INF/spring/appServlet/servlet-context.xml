@@ -20,14 +20,8 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
-	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
-	
-	<!-- Enables the Spring MVC @Controller programming model -->
 	<mvc:annotation-driven />
-
-	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />
-
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 		<property name="contentNegotiationManager" ref="contentNegotiationManager"/>
 		<property name="viewResolvers">
@@ -43,7 +37,6 @@
 			</list>
 		</property>
 	</bean>
-	
 	<bean id="contentNegotiationManager" class="org.springframework.web.accept.ContentNegotiationManager">
            <constructor-arg>
                 <bean class="org.springframework.web.accept.PathExtensionContentNegotiationStrategy">
@@ -64,12 +57,5 @@
 	        </list>
 	    </property>
     </bean>
-	  
-	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
-	
-	
 	<context:component-scan base-package="com.sbxxxia.web" />
-	
-	
-	
 </beans>
